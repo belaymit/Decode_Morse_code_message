@@ -54,3 +54,5 @@ s2_name = '.--- ..- .-.. . ...'
 puts decode_message(s2_name) # JULES
 ruby = '- .... .. ...   .. ...   .-. ..- -... -.--   .--. .-. --- --. .-. .- -- -- .. -. --.'
 puts decode_message(ruby) # THIS IS RUBY PROGRAMMING
+old_bottle = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
+puts decode_message(old_bottle) # A BOX FULL OF RUBIES
