@@ -46,6 +46,19 @@ def decode_message(morse_message)
 end
 
 # Test
+def decode_word(morse_word)
+  word = ''
+  word_array = morse_word
+  word_array.split.each { |i| word += decode_char(i) }
+  word
+end
+
+def decode_message(morse_message)
+  message_array = morse_message.split('   ')
+  message = ''
+  message_array.each { |i| message += "#{decode_word(i)} " }
+  message
+end
 puts decode_char('-...')
 puts decode_word('-- .. -.-. .-. --- ...- . .-. ... .') # MICROVERSE
 s1_name = '-... . .-.. .- -.--'
